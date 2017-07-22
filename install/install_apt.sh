@@ -104,6 +104,7 @@ python-geoip
 
 nodejs
 node-less
+libjs-less
 node-uglify
 gettext
 make

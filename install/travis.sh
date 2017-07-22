@@ -85,6 +85,7 @@ $RUNDIR/install_zookeeper.sh
 # Install and configure the reddit code
 ###############################################################################
 
+#npm install -g less uglifyjs
 [ -x "$(which pip)" ] || easy_install pip
 pip install -U pip wheel setuptools coverage
 pushd $REDDIT_CODE/r2
