@@ -36,6 +36,9 @@ sudo apt-get install $APTITUDE_OPTIONS cassandra=1.2.19
 # we don't want to upgrade to C* 2.0 yet, so we'll put it on hold
 apt-mark hold cassandra || true
 
+# commitlog may be left over, empty it
+rm -rf /var/lib/cassandra/commitlog/*
+
 # cassandra doesn't auto-start after install
 sudo service cassandra start
 
